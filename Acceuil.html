@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gengar.AI</title>
+    <link rel="stylesheet" href="Acceuil.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Quadrillage en arrière-plan */
+        body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(200, 200, 200, 0.2) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(200, 200, 200, 0.2) 1px, transparent 1px);
+    background-size: 100px 100px;
+    z-index: -2; /* Quadrillage derrière tout */
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="company-name">ESCAPE AI</div>
+    </div>
+    <div class="typewriter-container">
+        <span id="typewriter" class="typewriter-text"></span><span class="cursor"></span>
+    </div>   
+
+    <script>
+        const text = "REAL TIME OPTIMAL CRYPTO INVESTMENT STRATEGIES, NEWS\n& ULTRA EXCLUSIVE COMMUNITY.";
+        let typewriter = document.getElementById("typewriter");
+        let cursor = document.querySelector(".cursor");
+        let i = 0;
+
+        function typeEffect() {
+            if (i <= text.length) {
+                typewriter.textContent = text.substring(0, i);
+                i++;
+                setTimeout(typeEffect, 100);
+            } else {
+                cursor.style.display = "none"; // Supprime le curseur à la fin
+            }
+        }
+        typeEffect();
+
+
+    </script>
+<button class="angled-button" onclick="window.location.href='https://ton-site.framer.website';">
+    <span class="dots"></span>Browse
+</button>
+
+
+<a href="escape.html">
+    <button class="angled-button2">
+        <span class="dots"></span>Escape AI
+    </button>
+</a>
+
+<div class="bubble">
+    <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
