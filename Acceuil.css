@@ -72,13 +72,13 @@ body {
 .angled-button {
     position: absolute;
     bottom: 30%;
-    left: 44.5%;
+    left: 47.3%;
     display: flex;
     align-items: center;
     justify-content: center; /* Centre horizontalement */
     text-align: center; /* Assure que le texte est bien centré */
     width: auto; /* Ajuste à la largeur du texte */
-    padding: 5px 10px; /* Ajoute un peu plus d’espace */
+    padding: 5px 15px; /* Ajoute un peu plus d’espace */
     font-size: 1rem;
     font-weight: normal;
     color: white;
@@ -106,32 +106,7 @@ body {
 }
 
 
-.angled-button2 {
-    position: absolute;
-    bottom: 30%;
-    left: 50%;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    font-weight: normal;
-    color: white;
-    background: transparent;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
 
-}
-
-.angled-button2::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: -2px;
-    bottom: 0px;
-    border: 2px solid white;
-}
 
 
 
@@ -195,6 +170,5 @@ body {
 .dot:nth-child(8) { top: 90px; left: 80px; animation-delay: 1.4s; }
 .dot:nth-child(9) { top: 60px; left: 30px; animation-delay: 1.6s; }
 .dot:nth-child(10) { top: 50px; left: 60px; animation-delay: 1.8s; }
-
 
 
